@@ -2,6 +2,7 @@ const express = require("express");
 const hbs = require("hbs");
 const fs = require("fs");
 
+const port = process.env.PORT || 3000;
 const app = express();
 
 hbs.registerPartials(`${__dirname}/views/partials`);
@@ -30,7 +31,6 @@ app.use(express.static(`${__dirname}/public`));
 hbs.registerHelper("getCurrentYear", () => new Date().getFullYear());
 hbs.registerHelper("screamIt", str => str.toUpperCase());
 
-const port = 3000;
 console.log(process.argv);
 
 app.get("/", (req, res) =>
