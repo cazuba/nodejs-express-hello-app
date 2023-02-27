@@ -20,6 +20,6 @@
   "homepage": "https://github.com/cazuba/nodejs-express-hello-app#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "hbs": "^4.0.1"
+    "hbs": "^4.2.0"
   }
 }
